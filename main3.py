@@ -5,7 +5,7 @@ import numpy as np
 points = np.array([[0, 0.85], [0.1, 0.82], [0.2, 0.77], [0.25, 0.70], [0.22, 0.57], [0.35, 0.55], [0.55, 0.53]])
 
 
-def draw_curve(image, points, color=(0, 0, 255), thickness=3, radius=8):
+def draw_curve(image, points, color=(0, 0, 255), thickness=2, radius=6):
     width = image.shape[1]
     height = image.shape[0]
     for idx in range(1, len(points)):
@@ -60,6 +60,7 @@ if __name__ == "__main__":
     small_result = cv2.resize(result, None, fx=0.5, fy=0.5)
 
     draw_curve(small_result, transformed_points)
+    draw_curve(small_image, points)
 
     cv2.imshow('Original Image', small_image)
     cv2.imshow('Transformed Image', small_result)
