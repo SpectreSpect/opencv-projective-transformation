@@ -3,7 +3,7 @@ import numpy as np
 
 
 if __name__ == "__main__":
-    image = cv2.imread(r"data\road2.jpg")
+    image = cv2.imread(r"data/road2.jpg")
 
 
     left_top = (0, 520)

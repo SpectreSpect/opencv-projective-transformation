@@ -46,7 +46,7 @@ def getPerspectiveTransform(image, original_points, new_points):
 
 
 if __name__ == "__main__":
-    image = cv2.imread(r"data\road2.jpg")
+    image = cv2.imread(r"data/road2.jpg")
 
     original_points = np.float32([[0, 0.55], [1, 0.55], [0, 1], [1, 1]])
     new_points = np.float32([[0.33, 0], [0.66, 0], [0.33, 1], [0.66, 1]])
